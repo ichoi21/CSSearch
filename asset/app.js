@@ -27,4 +27,4 @@ $(document).ready(function () {
   });
 });
 
-console.log("the git flow");
+console.log("new console");
