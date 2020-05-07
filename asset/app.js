@@ -26,3 +26,5 @@ $(document).ready(function () {
     });
   });
 });
+
+console.log("the git flow");
