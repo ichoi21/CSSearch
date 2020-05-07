@@ -1,0 +1,34 @@
+## Project 1 - Coffee Shop Search
+
+Some USERS may have an indecisive habit on where they want to get coffee.
+This app would be to help the user find a shop nearby with their varied tastebuds.
+
+```
+- USER will answer a few questions to define their preferred coffee.
+- ANSWERS will filter the list of selections on coffee.
+- FINAL ANSWER will define the specific coffee shop matching USER's preferred coffee.
+- USER will provide prefered location.
+- USER ANSWER and LOCATION will be used to search on THIRD-PARTY API
+- API will provide location of coffee shop and matching USER with their coffee for the day!
+
+Example:
+https://www.drinktrade.com/
+```
+
+API:
+zomato.com
+getbootstrap.com
+momentjs
+jQuery
+
+Members:
+Alvaro Centeno
+Ian Choi
+Joseph Tawil
+Steven Simon
+
+## BONUS ADDITION:
+
+MENU/SPECIAL OF the DAY OF COFFEE SHOP LOCATION
+More Locations
+Tutorials Links of how to make coffee at home.
