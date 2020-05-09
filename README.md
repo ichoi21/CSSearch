@@ -16,19 +16,35 @@ https://www.drinktrade.com/
 ```
 
 API:
-zomato.com
-getbootstrap.com
-momentjs
-jQuery
+
+- zomato.com
+- getbootstrap.com
+- momentjs
+- jQuery
 
 Members:
-Alvaro Centeno
-Ian Choi
-Joseph Tawil
-Steven Simon
+
+- Alvaro Centeno
+- Ian Choi
+- Joseph Tawil
+- Steven Simon
 
 ## BONUS ADDITION:
 
-MENU/SPECIAL OF the DAY OF COFFEE SHOP LOCATION
-More Locations
-Tutorials Links of how to make coffee at home.
+- MENU/SPECIAL OF the DAY OF COFFEE SHOP LOCATION
+- More Locations
+- Tutorials Links of how to make coffee at home.
+
+## Requirements & Criteria
+
+- Server-side APIs - 2 minimum + 1 new 3rd Party API
+- GIT branching workflow
+- Agile Software Development
+- Comprehension Check
+- User Input Interactive
+- CSS Framework
+- HTML Semantic
+- Polished UI
+- Does not use alerts, confirms or prompts
+
+## Narrative on steps taken
