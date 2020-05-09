@@ -5,9 +5,11 @@ $(document).ready(function () {
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
     var cat = "&q=coffee";
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
+    var cityURL = "https://developers.zomato.com/api/v2.1/cities?";
     var count = "&count=5";
+    var textInput = $("#textInput").val();
+    var entityId = "";
 
-    // var textInput = $("#textInput").val();
     // $("#textInput").val("");
     // var cat = $("#cat").val();
     // $("#limit").val("");
@@ -15,23 +17,38 @@ $(document).ready(function () {
 
     $.ajax({
       type: "GET",
-      url: searchURL + "entity_id=306&entity_type=city" + cat + count + api_key,
+      url: cityURL + "q=" + textInput + api_key,
       dataType: "json",
     }).then(function (response) {
       console.log(response);
 
-      var name = response.address;
+      var cityId = response.location_suggestions[0].id;
+      var entityId = "entity_id=" + cityId + "&entity_type=city";
+      // console.log(entityId);
 
-      $("#shopName").text(name);
-      $("#icon").attr(
-        "src",
-        "http://openweathermap.org/img/wn/" + icon + ".png"
-      );
+      $.ajax({
+        type: "GET",
+        url: searchURL + entityId + cat + count + api_key,
+        dataType: "json",
+      }).then(function (dresponse) {
+        console.log(dresponse);
 
-      $("#address").html("<b>Location: </b>" + shopAddress);
-      $("#hood").html("<b>Neighborhood: </b>" + shopLocality);
-      $("#hours").html("<b>Operating Hours: </b>" + shopHours);
-      $("#ratings").html("<b>Ratings: </b>" + uRatings);
+        var name = dresponse.restaurants[0].restaurant.name;
+        var img = dresponse.restaurants[0].restaurant.photos[0].photo.thumb_url;
+        var shopAddress = dresponse.restaurants[0].restaurant.location.address;
+        var shopLocality =
+          dresponse.restaurants[0].restaurant.location.locality;
+        var shopHours = dresponse.restaurants[0].restaurant.timings;
+        var uRatings =
+          dresponse.restaurants[0].restaurant.user_rating.rating_text;
+
+        $("#shopName").text(name);
+        $("#image").attr("src", img);
+        $("#address").html("<b>Location: </b>" + shopAddress);
+        $("#hood").html("<b>Neighborhood: </b>" + shopLocality);
+        $("#hours").html("<b>Operating Hours: </b>" + shopHours);
+        $("#ratings").html("<b>Ratings: </b>" + uRatings);
+      });
     });
   });
 });
