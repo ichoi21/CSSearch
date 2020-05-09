@@ -7,11 +7,11 @@ $(document).ready(function () {
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
     var count = "&count=5";
 
-    var textInput = $("#textInput").val();
-    $("#textInput").val("");
-    var cat = $("#cat").val();
-    $("#limit").val("");
-    $("main").html("");
+    // var textInput = $("#textInput").val();
+    // $("#textInput").val("");
+    // var cat = $("#cat").val();
+    // $("#limit").val("");
+    // $("main").html("");
 
     $.ajax({
       type: "GET",
@@ -20,13 +20,18 @@ $(document).ready(function () {
     }).then(function (response) {
       console.log(response);
 
-      // for (var i = 0; i < response.data.length; i++) {
-      //   var still = response.data[i].images.original_still.url;
-      //   var gif = response.data[i].images.original.url;
-      //   $("main").prepend(
-      //     `<img class="gif" data-still=${still} data-gif=${gif} src=${still}></img>`
-      //   );
-      // }
+      var name = response.address;
+
+      $("#shopName").text(name);
+      $("#icon").attr(
+        "src",
+        "http://openweathermap.org/img/wn/" + icon + ".png"
+      );
+
+      $("#address").html("<b>Location: </b>" + shopAddress);
+      $("#hood").html("<b>Neighborhood: </b>" + shopLocality);
+      $("#hours").html("<b>Operating Hours: </b>" + shopHours);
+      $("#ratings").html("<b>Ratings: </b>" + uRatings);
     });
   });
 });

@@ -9,6 +9,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./asset/styles.css" />
     <title>Project 1: Coffee Search</title>
   </head>
 
@@ -20,13 +21,11 @@
     </header>
     <main class="container-fluid">
       <div class="row min-vh-100">
-        <div class="row" id="formInput">
-          <div class="col-md-6">
-            <form class="text-center">
-              <p>
-                <input type="text" id="textInput" placeholder="Search" />
-                <!-- <input type="text" id="api_key" placeholder="Your API Key" /> -->
-              </p>
+        <div class="col-md-6 bg-secondary" id="formInput">
+          <div class="row">
+            <form class="m-3">
+              <input type="text" id="textInput" placeholder="Search" />
+              <!-- <input type="text" id="api_key" placeholder="Your API Key" /> -->
               <button
                 id="btnSubmit"
                 class="btn btn-outline-info fas fa-search"
@@ -34,8 +33,8 @@
             </form>
           </div>
         </div>
-        <div class="row" id="infoOutput">
-          <div class="col-md-6">
+        <div class="col-md-6 bg-light" id="infoResults">
+          <div class="row">
             <div class="row pt-3" id="results">
               <div class="col-md-12 border">
                 <div class="d-flex align-items-center pt-4" id="coffee-search">
@@ -89,11 +88,6 @@
     ></script>
     <script
       src="https://kit.fontawesome.com/a361b2e3ef.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
     ></script>
     <script src="./asset/app.js"></script>
