@@ -7,6 +7,8 @@ $(document).ready(function () {
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
     var count = "&count=5";
 
+
+
     // var textInput = $("#textInput").val();
     // $("#textInput").val("");
     // var cat = $("#cat").val();
@@ -20,12 +22,13 @@ $(document).ready(function () {
     }).then(function (response) {
       console.log(response);
 
-<<<<<<< HEAD
       var randNum = Math.floor(Math.random() * response.restaurants.length);
 
       console.log(response.restaurants[randNum].restaurant.url)
 
+      $(".card-title").append(`<h5>${response.restaurants[0].restaurant.name}</h5>`)
       $(".card-text").append(`<img src=${response.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`);
+
 
       // for (var i = 0; i < response.restaurants.length; i++) {
       //   var still = response.restaurants[i].restaurant.url;
@@ -38,20 +41,17 @@ $(document).ready(function () {
   });
 });
 
-=======
-      var name = response.address;
+var name = response.address;
 
-      $("#shopName").text(name);
-      $("#icon").attr(
-        "src",
-        "http://openweathermap.org/img/wn/" + icon + ".png"
-      );
+$("#shopName").text(name);
+$("#icon").attr(
+  "src",
+  "http://openweathermap.org/img/wn/" + icon + ".png"
+);
 
-      $("#address").html("<b>Location: </b>" + shopAddress);
-      $("#hood").html("<b>Neighborhood: </b>" + shopLocality);
-      $("#hours").html("<b>Operating Hours: </b>" + shopHours);
-      $("#ratings").html("<b>Ratings: </b>" + uRatings);
-    });
-  });
-});
->>>>>>> fcab1ef1fd5ea25f128e73337cc91b3e3a39f2a9
+$("#address").html("<b>Location: </b>" + shopAddress);
+$("#hood").html("<b>Neighborhood: </b>" + shopLocality);
+$("#hours").html("<b>Operating Hours: </b>" + shopHours);
+$("#ratings").html("<b>Ratings: </b>" + uRatings);
+
+
