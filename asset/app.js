@@ -4,7 +4,8 @@ $(document).ready(function () {
     // var api_key = $("#api_key").val();
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
     var cat = "&q=coffee";
-    var 
+    var searchURL = "https://developers.zomato.com/api/v2.1/search?";
+    var count = "&count=5";
 
     var textInput = $("#textInput").val();
     $("#textInput").val("");
@@ -14,7 +15,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "GET",
-      url: `https://developers.zomato.com/api/v2.1/search?entity_id=306&entity_type=city&q=coffee%20shop&count=3&apikey=${api_key}`,
+      url: searchURL + "entity_id=306&entity_type=city" + cat + count + api_key,
       dataType: "json",
     }).then(function (response) {
       console.log(response);
