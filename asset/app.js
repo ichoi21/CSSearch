@@ -2,7 +2,10 @@ $(document).ready(function () {
   $("#btnSubmit").on("click", function (e) {
     e.preventDefault();
     // var api_key = $("#api_key").val();
-    var api_key = "8db0f9bc1f4b7d7c56298c24299661bf";
+    var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
+    var cat = "&q=coffee";
+    var 
+
     var textInput = $("#textInput").val();
     $("#textInput").val("");
     var cat = $("#cat").val();
@@ -26,9 +29,3 @@ $(document).ready(function () {
     });
   });
 });
-
-console.log("new console");
-
-for (var i = 0; i < 10; i++) {
-  console.log(i);
-}
