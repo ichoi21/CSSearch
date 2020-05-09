@@ -16,15 +16,20 @@ $(document).ready(function () {
     }).then(function (response) {
       console.log(response);
 
-      // for (var i = 0; i < response.data.length; i++) {
-      //   var still = response.data[i].images.original_still.url;
-      //   var gif = response.data[i].images.original.url;
-      //   $("main").prepend(
-      //     `<img class="gif" data-still=${still} data-gif=${gif} src=${still}></img>`
+      var randNum = Math.floor(Math.random() * response.restaurants.length);
+
+      console.log(response.restaurants[randNum].restaurant.url)
+
+      $(".card-text").append(`<img src=${response.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`);
+
+      // for (var i = 0; i < response.restaurants.length; i++) {
+      //   var still = response.restaurants[i].restaurant.url;
+      //   // var gif = response.restaurants[i].restaurant.original.url;
+      //   $("body").append(
+      //     `<img src=${response.restaurants[randNum].restaurant.photos[0].photo.url}>`
       //   );
       // }
     });
   });
 });
 
-console.log("new console");
