@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "GET",
-      url: `https://developers.zomato.com/api/v2.1/search?entity_id=306&entity_type=city&q=cafe&apikey=${api_key}`,
+      url: `https://developers.zomato.com/api/v2.1/search?entity_id=306&entity_type=city&q=coffee%20shop&count=3&apikey=${api_key}`,
       dataType: "json",
     }).then(function (response) {
       console.log(response);
@@ -26,3 +26,5 @@ $(document).ready(function () {
     });
   });
 });
+
+console.log("new console");
