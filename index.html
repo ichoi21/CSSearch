@@ -1,129 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./asset/styles.css" />
-    <title>Project 1: Coffee Search</title>
-  </head>
 
-  <body class="container">
-    <header>
-      <div class="jumbotron jumbotron.fluid text-center">
-        <h3>Coffee Shop Search</h3>
-      </div>
-    </header>
-    <main class="container-fluid">
-      <div class="row min-vh-100">
-        <div class="col-md-6 bg-secondary" id="formInput">
-          <div class="row">
-            <form class="m-3">
-              <input type="text" id="textInput" placeholder="Search" />
-              <!-- <input type="text" id="api_key" placeholder="Your API Key" /> -->
-              <button
-                id="btnSubmit"
-                class="btn btn-outline-info fas fa-search"
-              ></button>
-            </form>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./asset/styles.css" />
+  <title>Project 1: Coffee Search</title>
+</head>
+
+<body class="container">
+  <header>
+    <div class="jumbotron jumbotron.fluid text-center">
+      <h3>Coffee Shop Search</h3>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row min-vh-100">
+      <div class="col-md-6 bg-secondary" id="formInput">
+        <div class="row">
+          <form class="m-3">
+            <input type="text" id="textInput" placeholder="Search" />
+            <!-- <input type="text" id="api_key" placeholder="Your API Key" /> -->
+            <button id="btnSubmit" class="btn btn-outline-info fas fa-search"></button>
+          </form>
         </div>
-        <div class="col-md-6 bg-light" id="infoResults">
+      </div>
+      <div class="col-md-6 bg-light" id="infoResults">
+        <div class="card ml-5" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text"></p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+
           <div class="row">
             <div class="row pt-3" id="results">
-              <div class="col-md-12 border">
+              <!-- <div class="col-md-12 border">
                 <div class="d-flex align-items-center pt-4" id="coffee-search">
                   <h2 class="font-weight-bold" id="shopName"></h2>
-                  <div class="storeImage">
-                    <img id="icon" />
-                  </div>
+                  <img class="storeImage">
+                  <img id="icon"></img>
                 </div>
-                <div class="pb-4" id="storeInfo">
-                  <div id="address"></div>
-                  <div id="hood"></div>
-                  <div id="hours"></div>
-                  <div id="ratings"></div>
-                  <!-- <div id="recommendations"></div> -->
-                </div>
+              </div> -->
+              <div class="pb-4" id="storeInfo">
+                <div id="address"></div>
+                <div id="hood"></div>
+                <div id="hours"></div>
+                <div id="ratings"></div>
+                <!-- <div id="recommendations"></div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-
-<<<<<<< HEAD
-<body class="container">
-  <div class="jumbotron jumbotron.fluid text-center">
-    <h3>Coffee Shop Search</h3>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <form class="text-center">
-        <p>
-          <input type="text" id="textInput" placeholder="Search" />
-          <!-- <input type="text" id="limit" placeholder="How Many Result(#)" /> -->
-          <input type="text" id="api_key" placeholder="Your API Key" />
-        </p>
-        <button id="btnSubmit" class="btn btn-outline-info">Search</button>
-      </form>
-      <main class="container"></main>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text"></p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  </main>
+
+  <footer class="text-center bg-dark sticky-footer small">
+    <div class="container" id="footer">
+      <span class="text-muted">With the help of Google, OWM, open source, GitHub, and BCS put
+        together by
+
+        <a link target="_blank" href="">Alavaro </a>,
+        <a link target="_blank" href="">Ian </a>,
+        <a link target="_blank" href="">Joseph </a>,
+        <a link target="_blank" href="">Steven </a>, &copy; 2020</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a361b2e3ef.js" crossorigin="anonymous"></script>
   <script src="./asset/app.js"></script>
 </body>
-=======
-    <footer class="text-center bg-dark sticky-footer small">
-      <div class="container" id="footer">
-        <span class="text-muted"
-          >With the help of Google, OWM, open source, GitHub, and BCS put
-          together by
->>>>>>> fcab1ef1fd5ea25f128e73337cc91b3e3a39f2a9
 
-          <a link target="_blank" href="">Alavaro </a>,
-          <a link target="_blank" href="">Ian </a>,
-          <a link target="_blank" href="">Joseph </a>,
-          <a link target="_blank" href="">Steven </a>, &copy; 2020</span
-        >
-      </div>
-    </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/a361b2e3ef.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./asset/app.js"></script>
-  </body>
 </html>
