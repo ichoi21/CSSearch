@@ -20,6 +20,25 @@ $(document).ready(function () {
     }).then(function (response) {
       console.log(response);
 
+<<<<<<< HEAD
+      var randNum = Math.floor(Math.random() * response.restaurants.length);
+
+      console.log(response.restaurants[randNum].restaurant.url)
+
+      $(".card-text").append(`<img src=${response.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`);
+
+      // for (var i = 0; i < response.restaurants.length; i++) {
+      //   var still = response.restaurants[i].restaurant.url;
+      //   // var gif = response.restaurants[i].restaurant.original.url;
+      //   $("body").append(
+      //     `<img src=${response.restaurants[randNum].restaurant.photos[0].photo.url}>`
+      //   );
+      // }
+    });
+  });
+});
+
+=======
       var name = response.address;
 
       $("#shopName").text(name);
@@ -35,3 +54,4 @@ $(document).ready(function () {
     });
   });
 });
+>>>>>>> fcab1ef1fd5ea25f128e73337cc91b3e3a39f2a9
