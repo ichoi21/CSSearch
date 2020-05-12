@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./asset/styles.css" />
   <title>Project 1: Coffee Search</title>
 </head>
+
 <body class="container">
   <header>
     <div class="jumbotron jumbotron.fluid text-center">
@@ -16,7 +18,7 @@
   </header>
   <main class="container-fluid">
     <div class="row min-vh-100">
-      <div class="col-md-6 bg-secondary" id="formInput">
+      <div class="col-md-3 bg-secondary" id="formInput">
         <div class="row">
           <form class="m-3">
             <input type="text" id="textInput" placeholder="Search" />
@@ -25,23 +27,103 @@
           </form>
         </div>
       </div>
-      <div class="col-md-6 bg-light" id="infoResults">
-        <div class="card ml-5" style="width: 18rem;">
+      <div class="col-md-9 bg-light" id="infoResults">
+        <div class="card ml-5 mt-2" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title"></h5>
+            <h5 class="card-title pl-3" id="restName"></h5>
             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-            <p class="card-text"></p>
+            <p class="card-text pl-3" id="restImg"></p>
             <!-- <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a> -->
             <div class="row">
-              <div class="row pt-3" id="results">
-                <div class="pb-4" id="storeInfo">
-                  <div id="address"></div>
-                  <div id="hood"></div>
-                  <div id="hours"></div>
-                  <div id="ratings"></div>
-                  <!-- <div id="recommendations"></div> -->
-                </div>
+
+              <div class="pl-3" id="storeInfo">
+                <div id="address"></div>
+                <div id="hood"></div>
+                <div id="hours"></div>
+                <div id="ratings"></div>
+                <!-- <div id="recommendations"></div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card ml-5 mt-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restNameTwo"></h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImgTwo"></p>
+            <!-- <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+            <div class="row">
+
+              <div class="pl-3" id="storeInfo">
+                <div id="addressTwo"></div>
+                <div id="hoodTwo"></div>
+                <div id="hoursTwo"></div>
+                <div id="ratingsTwo"></div>
+                <!-- <div id="recommendations"></div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card ml-5 mt-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restNameThree"></h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImgThree"></p>
+            <!-- <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+            <div class="row">
+
+              <div class="pl-3" id="storeInfo">
+                <div id="addressThree"></div>
+                <div id="hoodThree"></div>
+                <div id="hoursThree"></div>
+                <div id="ratingsThree"></div>
+                <!-- <div id="recommendations"></div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card ml-5 mt-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restNameFour"></h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImgFour"></p>
+            <!-- <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+            <div class="row">
+
+              <div class="pl-3" id="storeInfo">
+                <div id="addressFour"></div>
+                <div id="hoodFour"></div>
+                <div id="hoursFour"></div>
+                <div id="ratingsFour"></div>
+                <!-- <div id="recommendations"></div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card ml-5 mt-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restNameFive"></h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImgFive"></p>
+            <!-- <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+            <div class="row">
+
+              <div class="pl-3" id="storeInfo">
+                <div id="addressFive"></div>
+                <div id="hoodFive"></div>
+                <div id="hoursFive"></div>
+                <div id="ratingsFive"></div>
+                <!-- <div id="recommendations"></div> -->
+
               </div>
             </div>
           </div>
@@ -53,7 +135,7 @@
     <div class="container" id="footer">
       <span class="text-muted">With the help of Google, OWM, open source, GitHub, and BCS put
         together by
-        <a link target="_blank" href="">Alavaro </a>,
+        <a link target="_blank" href="">Alvaro </a>,
         <a link target="_blank" href="">Ian </a>,
         <a link target="_blank" href="">Joseph </a>,
         <a link target="_blank" href="">Steven </a>, &copy; 2020</span>
@@ -71,4 +153,5 @@
   <script src="./asset/qna.js"></script>
   <script src="./asset/app.js"></script>
 </body>
+
 </html>
