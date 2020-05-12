@@ -44,7 +44,7 @@ const Questions = [
 ];
 const Answers = [];
 
-("Dunkin' Donuts");
+("Dunkin' Donuts"); //count = 
 ("Starbucks");
 ("Peet's");
 ("Blue Bottle Coffee");
@@ -53,3 +53,44 @@ const Answers = [];
 //Answers of the questions should be tallied to provide a final answer.
 //The final answer will be the name of a coffee shop in which we'll locate the closet
 //from their selected city choice.
+$(document).ready(function () {
+  var count = 0;
+
+  var answer = $("#answer1").attr("value");
+  var answer2 = $("#answer2").attr("value");
+
+  // var question = document.querySelectorAll("#question2");
+  // for (var i = 0; i < question.length; i++) {
+  //   for (var j = 0; j < Questions.length; i++) {
+  //     if (questions[i].value == {
+
+  //     }
+  //   }
+
+  // }
+  $("#answer1").on("click", function () {
+    count++;
+  });
+  // else if ($("#answer2").on("click")) {
+  //   count += 2;
+  //   console.log(count);
+  // }
+
+  // $("#answer1").on("click", function () {
+  //   count++;
+  //   console.log(count);
+  //   console.log(question);
+  // });
+  // $("#answer2").on("click", function () {
+  //   count += 2;
+  //   console.log(count);
+  // });
+  // $("#answer3").on("click", function () {
+  //   count += 3
+  //   console.log(count);
+  // });
+  // $("#answer4").on("click", function () {
+  //   count += 4;
+  //   console.log(count);
+  // });
+});
