@@ -8,6 +8,8 @@ $(document).ready(function () {
     var count = "&count=5";
     var textInput = $("#textInput").val();
     var entityId = "";
+    var OpHours = moment().format("MMMM Do YYYY, h:mm:ss a");
+    console.log(OpHours);
 
     $.ajax({
       type: "GET",
@@ -26,7 +28,6 @@ $(document).ready(function () {
         dataType: "json",
       }).then(function (dresponse) {
         console.log(dresponse);
-
 
         var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
 
@@ -65,8 +66,6 @@ $(document).ready(function () {
         var uRatings =
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
 
-
-
         $(".card-text").append(
           `<img src=${dresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`
         );
@@ -81,4 +80,3 @@ $(document).ready(function () {
     });
   });
 });
-
