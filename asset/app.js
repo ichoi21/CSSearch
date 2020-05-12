@@ -1,7 +1,6 @@
 $(document).ready(function () {
   $("#btnSubmit").on("click", function (e) {
     e.preventDefault();
-    // var api_key = $("#api_key").val();
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
     var cat = "&q=coffee";
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
@@ -28,6 +27,7 @@ $(document).ready(function () {
       }).then(function (dresponse) {
         console.log(dresponse);
 
+
         var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
 
         console.log(dresponse.restaurants[randNum].restaurant.url);
@@ -50,6 +50,23 @@ $(document).ready(function () {
         var uRatings =
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
 
+        var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
+
+        console.log(dresponse.restaurants[randNum].restaurant.url);
+
+        var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
+        var name = dresponse.restaurants[0].restaurant.name;
+        var img =
+          dresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url;
+        var shopAddress = dresponse.restaurants[0].restaurant.location.address;
+        var shopLocality =
+          dresponse.restaurants[0].restaurant.location.locality;
+        var shopHours = dresponse.restaurants[0].restaurant.timings;
+        var uRatings =
+          dresponse.restaurants[0].restaurant.user_rating.rating_text;
+
+
+
         $(".card-text").append(
           `<img src=${dresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`
         );
@@ -64,3 +81,4 @@ $(document).ready(function () {
     });
   });
 });
+
