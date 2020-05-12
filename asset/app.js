@@ -10,11 +10,6 @@ $(document).ready(function () {
     var textInput = $("#textInput").val();
     var entityId = "";
 
-    // $("#textInput").val("");
-    // var cat = $("#cat").val();
-    // $("#limit").val("");
-    // $("main").html("");
-
     $.ajax({
       type: "GET",
       url: cityURL + "q=" + textInput + api_key,
@@ -33,8 +28,21 @@ $(document).ready(function () {
       }).then(function (dresponse) {
         console.log(dresponse);
 
+        var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
+
+        console.log(dresponse.restaurants[randNum].restaurant.url);
+
+        // for (var i = 0; i < response.restaurants.length; i++) {
+        //   var still = response.restaurants[i].restaurant.url;
+        //   // var gif = response.restaurants[i].restaurant.original.url;
+        //   $("body").append(
+        //     `<img src=${response.restaurants[randNum].restaurant.photos[0].photo.url}>`
+        //   );
+        // }
+
         var name = dresponse.restaurants[0].restaurant.name;
-        var img = dresponse.restaurants[0].restaurant.photos[0].photo.thumb_url;
+        var img =
+          dresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url;
         var shopAddress = dresponse.restaurants[0].restaurant.location.address;
         var shopLocality =
           dresponse.restaurants[0].restaurant.location.locality;
@@ -42,7 +50,11 @@ $(document).ready(function () {
         var uRatings =
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
 
-        $("#shopName").text(name);
+        $(".card-text").append(
+          `<img src=${dresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`
+        );
+
+        $(".card-title").html("<h5>" + name + "</h5>");
         $("#image").attr("src", img);
         $("#address").html("<b>Location: </b>" + shopAddress);
         $("#hood").html("<b>Neighborhood: </b>" + shopLocality);

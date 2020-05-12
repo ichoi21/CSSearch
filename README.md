@@ -48,3 +48,8 @@ Members:
 - Does not use alerts, confirms or prompts
 
 ## Narrative on steps taken
+
+- Initial Repo Setup
+- Contributors branch set up
+- JS/HTML tied with Zomato API functional
+- User Input to call city is functional
