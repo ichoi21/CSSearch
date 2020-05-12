@@ -29,14 +29,6 @@ $(document).ready(function () {
       $(".card-title").append(`<h5>${response.restaurants[0].restaurant.name}</h5>`)
       $(".card-text").append(`<img src=${response.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`);
 
-
-      // for (var i = 0; i < response.restaurants.length; i++) {
-      //   var still = response.restaurants[i].restaurant.url;
-      //   // var gif = response.restaurants[i].restaurant.original.url;
-      //   $("body").append(
-      //     `<img src=${response.restaurants[randNum].restaurant.photos[0].photo.url}>`
-      //   );
-      // }
     });
   });
 });
