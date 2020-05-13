@@ -1,8 +1,4 @@
 $(document).ready(function () {
-
-  var answer = require("./qna.js");
-  var response = answer();
-  console.log(response);
   $("#btnSubmit").on("click", function (e) {
     e.preventDefault();
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";

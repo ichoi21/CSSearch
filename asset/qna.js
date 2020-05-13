@@ -41,14 +41,20 @@ const Questions = [
     "$$$$",
     "$$$$$",
   ],
-];
-const Answers = [];
 
-("Dunkin' Donuts"); //count = 
-("Starbucks");
-("Peet's");
-("Blue Bottle Coffee");
-("Phil'z");
+  "Q7 of 7 : Can you let us know what city you're in or provide one where you want to drink?",
+  //UserInput to grab location to match closet coffee shop with specified shop.
+];
+
+const Answers = [
+  "1", "2", "3", "4", "5"
+];
+
+("Dunkin' Donuts"); //$$, new, coffee maker, mix - 6 or less
+("Starbucks"); //$$$, cold brew, nespresso, - 
+("Peet's"); //$$$, cold brew, nespresso, medium, intermediate - 
+("Phil'z"); //$$$$, pour over, dark, hints, advance - 
+("Blue Bottle Coffee"); //$$$$$, light, pour over, nerd - 30 or higher
 
 //Answers of the questions should be tallied to provide a final answer.
 //The final answer will be the name of a coffee shop in which we'll locate the closet
@@ -64,7 +70,7 @@ $(document).ready(function () {
   question4();
   question5();
   question6();
-  module.exports = function cafeFinder() {
+  function cafeFinder() {
     $("#button").on("click", function () {
       if (count <= 6) {
         answer = "Dunkin' Donuts";
@@ -106,7 +112,7 @@ $(document).ready(function () {
   //   }
   // });
   function question1() {
-    $("#answer").on("click", function () {
+    $("#answer1").on("click", function () {
       count++;
       console.log(count);
     });
@@ -116,6 +122,7 @@ $(document).ready(function () {
     });
     $("#answer3").on("click", function () {
       count += 3;
+      console.log(count);
 
     });
     $("#answer4").on("click", function () {
