@@ -8,18 +8,15 @@ $(document).ready(function () {
     var count = "&count=5";
     var textInput = $("#textInput").val();
     var entityId = "";
-
     $.ajax({
       type: "GET",
       url: cityURL + "q=" + textInput + api_key,
       dataType: "json",
     }).then(function (response) {
       console.log(response);
-
       var cityId = response.location_suggestions[0].id;
       var entityId = "entity_id=" + cityId + "&entity_type=city";
       // console.log(entityId);
-
       $.ajax({
         type: "GET",
         url: searchURL + entityId + cat + count + api_key,
@@ -28,9 +25,7 @@ $(document).ready(function () {
         console.log(dresponse);
 
         var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
-
         console.log(dresponse.restaurants[randNum].restaurant.url);
-
         // for (var i = 0; i < response.restaurants.length; i++) {
         //   var still = response.restaurants[i].restaurant.url;
         //   // var gif = response.restaurants[i].restaurant.original.url;
@@ -38,7 +33,6 @@ $(document).ready(function () {
         //     `<img src=${response.restaurants[randNum].restaurant.photos[0].photo.url}>`
         //   );
         // }
-
         var name = dresponse.restaurants[0].restaurant.name;
         var img =
           dresponse.restaurants[0].restaurant.photos[randNum].photo.thumb_url;
@@ -57,11 +51,8 @@ $(document).ready(function () {
         $("#hood").html("<b>Neighborhood: </b>" + shopLocality);
         $("#hours").html("<b>Operating Hours: </b>" + shopHours);
         $("#ratings").html("<b>Ratings: </b>" + uRatings);
-
         var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
-
         // console.log(dresponse.restaurants[randNum].restaurant.url);
-
         // var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
         var nameTwo = dresponse.restaurants[1].restaurant.name;
         var imgTwo =
@@ -72,7 +63,6 @@ $(document).ready(function () {
         var shopHoursTwo = dresponse.restaurants[1].restaurant.timings;
         var uRatingsTwo =
           dresponse.restaurants[1].restaurant.user_rating.rating_text;
-
         $("#restNameTwo").html("<h5>" + nameTwo + "</h5>");
         $("#restImgTwo").append(
           `<img src=${imgTwo}>`
@@ -82,7 +72,6 @@ $(document).ready(function () {
         $("#hoodTwo").html("<b>Neighborhood: </b>" + shopLocalityTwo);
         $("#hoursTwo").html("<b>Operating Hours: </b>" + shopHoursTwo);
         $("#ratingsTwo").html("<b>Ratings: </b>" + uRatingsTwo);
-
         var nameThree = dresponse.restaurants[2].restaurant.name;
         var imgThree =
           dresponse.restaurants[2].restaurant.photos[randNum].photo.thumb_url;
@@ -92,7 +81,6 @@ $(document).ready(function () {
         var shopHoursThree = dresponse.restaurants[2].restaurant.timings;
         var uRatingsThree =
           dresponse.restaurants[2].restaurant.user_rating.rating_text;
-
         $("#restNameThree").html("<h5>" + nameThree + "</h5>");
         $("#restImgThree").append(
           `<img src=${imgThree}>`
@@ -102,7 +90,6 @@ $(document).ready(function () {
         $("#hoodThree").html("<b>Neighborhood: </b>" + shopLocalityThree);
         $("#hoursThree").html("<b>Operating Hours: </b>" + shopHoursThree);
         $("#ratingsThree").html("<b>Ratings: </b>" + uRatingsThree);
-
         var nameFour = dresponse.restaurants[3].restaurant.name;
         var imgFour =
           dresponse.restaurants[3].restaurant.photos[randNum].photo.thumb_url;
@@ -112,7 +99,6 @@ $(document).ready(function () {
         var shopHoursFour = dresponse.restaurants[3].restaurant.timings;
         var uRatingsFour =
           dresponse.restaurants[3].restaurant.user_rating.rating_text;
-
         $("#restNameFour").html("<h5>" + nameFour + "</h5>");
         $("#restImgFour").append(
           `<img src=${imgFour}>`
@@ -122,7 +108,6 @@ $(document).ready(function () {
         $("#hoodFour").html("<b>Neighborhood: </b>" + shopLocalityFour);
         $("#hoursFour").html("<b>Operating Hours: </b>" + shopHoursFour);
         $("#ratingsFour").html("<b>Ratings: </b>" + uRatingsFour);
-
         var nameFive = dresponse.restaurants[4].restaurant.name;
         var imgFive =
           dresponse.restaurants[4].restaurant.photos[randNum].photo.thumb_url;
@@ -132,7 +117,6 @@ $(document).ready(function () {
         var shopHoursFive = dresponse.restaurants[4].restaurant.timings;
         var uRatingsFive =
           dresponse.restaurants[4].restaurant.user_rating.rating_text;
-
         $("#restNameFive").html("<h5>" + nameFive + "</h5>");
         $("#restImgFive").append(
           `<img src=${imgFive}>`
@@ -142,10 +126,7 @@ $(document).ready(function () {
         $("#hoodFive").html("<b>Neighborhood: </b>" + shopLocalityFive);
         $("#hoursFive").html("<b>Operating Hours: </b>" + shopHoursFive);
         $("#ratingsFive").html("<b>Ratings: </b>" + uRatingsFive);
-
-
       });
     });
   });
 });
-
