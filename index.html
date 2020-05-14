@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./asset/styles.css" />
-  <title>Project 1: Coffee Search</title>
-</head>
-
-<body class="container">
-  <header>
-    <div class="jumbotron jumbotron.fluid text-center">
-      <h3>Coffee Shop <span class="badge badge-warning">Search!</span></h3>
-    </div>
-  </header>
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./asset/styles.css" />
+    <title>Project 1: Coffee Search</title>
+  </head>
+  <body class="container">
+    <header>
+      <div class="jumbotron jumbotron.fluid text-center">
+        <h3>Coffee Shop <span class="badge badge-warning">Search!</span></h3>
+        <nav class="navbar navbar-expand-md navbar-dark text-light">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="col-md-8"></div>
+          <div class="col-md-4">
+            <div class="collapse navbar-collapse" id="navbars">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="learn.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="disclaim.html">Disclaimer</a>
+                </li>
+              </ul>
+          </div>
+          </nav>
+      </div>
+    </header>
   <main class="container-fluid">
     <div class="row min-vh-100">
       <div class="col-md-3 bg-secondary" id="formInput">
@@ -123,35 +154,49 @@
                 <div id="hoursFive"></div>
                 <div id="ratingsFive"></div>
                 <!-- <div id="recommendations"></div> -->
-
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="text-center bg-dark sticky-footer small">
-    <div class="container" id="footer">
-      <span class="text-muted">With the help of Google, OWM, open source, GitHub, and BCS put
-        together by
-        <a link target="_blank" href="">Alvaro </a>,
-        <a link target="_blank" href="">Ian </a>,
-        <a link target="_blank" href="">Joseph </a>,
-        <a link target="_blank" href="">Steven </a>, &copy; 2020</span>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/a361b2e3ef.js" crossorigin="anonymous"></script>
-  <script src="./asset/qna.js"></script>
-  <script src="./asset/app.js"></script>
-</body>
+    </main>
+    <footer class="text-center bg-dark sticky-footer small">
+      <div class="container" id="footer">
+        <span class="text-muted"
+          >With the help of Google, OWM, open source, GitHub, and BCS put
+          together by <a link target="_blank" href="">Alavaro </a>,
+          <a link target="_blank" href="">Ian </a>,
+          <a link target="_blank" href="">Joseph </a>,
+          <a link target="_blank" href="">Steven </a>, &copy; 2020</span
+        >
+      </div>
+    </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"
+      integrity="sha256-C66CaAImteEKZPYvgng9j10J/45e9sAuZyfPYCwp4gE="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a361b2e3ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./asset/qna.js"></script> -->
+    <script src="./asset/app.js"></script>
+  </body>
 </html>
