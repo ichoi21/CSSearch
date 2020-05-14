@@ -27,7 +27,6 @@ $(document).ready(function () {
       }).then(function (dresponse) {
         console.log(dresponse);
 
-
         var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
 
         console.log(dresponse.restaurants[randNum].restaurant.url);
@@ -49,7 +48,6 @@ $(document).ready(function () {
         var shopHours = dresponse.restaurants[0].restaurant.timings;
         var uRatings =
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
-
         $("#restName").html("<h5>" + name + "</h5>");
         $("#restImg").append(
           `<img src=${img}>`
