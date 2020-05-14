@@ -52,4 +52,8 @@ Members:
 - Initial Repo Setup
 - Contributors branch set up
 - JS/HTML tied with Zomato API functional
-- User Input to call city is functional
+- User Input to call city is functional for initial test run
+- User Input provide answers from quiz to select coffee brand and city location.
+- Added Modal to disclaimer's page.
+- Added Learning page for more user content.
+- Results from inputs into a container with card bodies
