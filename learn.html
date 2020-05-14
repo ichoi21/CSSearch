@@ -44,6 +44,7 @@
         <div class="col-md-3 bg-dark" id="navbar">
           <div class="row p-2 pt-4 justify-content-center">
             <button
+              id="btnBrew"
               role="button"
               class="btn btn-outline-warning btn-block"
               data-toggle="collapse"
@@ -54,6 +55,7 @@
           </div>
           <div class="row p-2 justify-content-center">
             <button
+              id="btnMyth"
               role="button"
               class="btn btn-outline-warning btn-block"
               data-toggle="collapse"
@@ -64,10 +66,11 @@
           </div>
           <div class="row p-2 justify-content-center">
             <button
+              id="btnRoast"
               role="button"
               class="btn btn-outline-warning btn-block"
               data-toggle="collapse"
-              data-target="#roast"
+              data-target="#myth2"
             >
               The Roast
             </button>
@@ -77,17 +80,10 @@
           <div class="row mt-2 justify-content-center">
             <div class="card" style="width: 40rem; center;">
               <div class="card-body">
-                <div id="brew" class="collapse show width">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vNtrp0M-qs4"></iframe>
-                  </div>      
-                </div>
-                <div id="myth" class="collapse show width">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.missioncoffeeco.com/blogs/news/fact-or-myth-do-light-roasts-have-more-caffeine-than-dark-roasts"></iframe>
-                  </div>
-            </div>
-
+                <div id="brew" class="collapse show width"></div>
+                <div id="myth" class="collapse show width"></div>
+                <div id="roast" class="collapse show width"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -97,10 +93,17 @@
       <div class="container" id="footer">
         <span class="text-muted"
           >With the help of Google, OWM, open source, GitHub, and BCS put
-          together by <a link target="_blank" href="">Alavaro </a>,
-          <a link target="_blank" href="">Ian </a>,
-          <a link target="_blank" href="">Joseph </a>,
-          <a link target="_blank" href="">Steven </a>, &copy; 2020</span
+          together by -
+
+          <a link target="_blank" href="https://github.com/alvaro-centeno"
+            >Alavaro </a
+          >, <a link target="_blank" href="https://github.com/ichoi21">Ian </a>,
+          <a link target="_blank" href="https://github.com/josephtawil"
+            >Joseph </a
+          >,
+          <a link target="_blank" href="https://github.com/stevierichard"
+            >Steven </a
+          >, &copy; 2020</span
         >
       </div>
     </footer>
@@ -129,7 +132,6 @@
       src="https://kit.fontawesome.com/a361b2e3ef.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./asset/qna.js"></script>
-    <script src="./asset/app.js"></script>
+    <script src="./asset/brew.js"></script>
   </body>
 </html>
