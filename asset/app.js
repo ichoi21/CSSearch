@@ -23,6 +23,7 @@ $(document).ready(function () {
         dataType: "json",
       }).then(function (dresponse) {
         console.log(dresponse);
+
         var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
         console.log(dresponse.restaurants[randNum].restaurant.url);
         // for (var i = 0; i < response.restaurants.length; i++) {
