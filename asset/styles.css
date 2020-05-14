@@ -3,7 +3,8 @@ body {
 }
 .jumbotron {
   background-image: url("./img/cbeans.jpg");
-  background-size: contain;
-  background-position: 100%;
-  max-width;
+  background-size: 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-color: black;
 }
