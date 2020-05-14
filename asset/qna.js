@@ -8,7 +8,7 @@ const Questions = [
   ],
   [
     "Q2 of 6: What's your preferred way to making coffee?",
-    "Coffer Maker",
+    "Coffee Maker",
     "French Press/Pour Over",
     "Cold Brew",
     "Nespresso",
@@ -36,9 +36,9 @@ const Questions = [
   ],
   [
     "Q6 of 6 : How much do you spend on a cup of coffee regularly?",
-    "$$",
-    "$$$",
-    "$$$$",
+    "$$", 
+    "$$$", 
+    "$$$$", 
     "$$$$$",
   ],
 
@@ -49,6 +49,16 @@ const Questions = [
 const Answers = [
   "1", "2", "3", "4", "5"
 ];
+
+
+"Q7 of 7 : Can you let us know what city you're in or provide one where you want to drink?",
+//UserInput to grab location to match closet coffee shop with specified shop.
+
+
+const Answers = [
+  "1", "2", "3", "4", "5"
+];
+
 
 ("Dunkin' Donuts"); //$$, new, coffee maker, mix - 6 or less
 ("Starbucks"); //$$$, cold brew, nespresso, - 
