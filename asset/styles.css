@@ -1,9 +1,18 @@
 body {
   background-color: grey;
 }
+
 .jumbotron {
   background-image: url("./img/cbeans.jpg");
   background-size: contain;
   background-position: 100%;
   max-width;
+}
+
+#recommend{
+  margin-left: 25%;
+}
+
+#suggested {
+  margin-left: 25%;
 }
