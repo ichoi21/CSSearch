@@ -8,7 +8,7 @@ const Questions = [
   ],
   [
     "Q2 of 6: What's your preferred way to making coffee?",
-    "Coffer Maker",
+    "Coffee Maker",
     "French Press/Pour Over",
     "Cold Brew",
     "Nespresso",
@@ -51,11 +51,11 @@ const Answers = [
   "1", "2", "3", "4", "5"
 ];
 
-//("Dunkin' Donuts"); //$$, new, coffee maker, mix - 6 or less
-//("Starbucks"); //$$$, cold brew, nespresso, - 
-//("Peet's"); //$$$, cold brew, nespresso, medium, intermediate - 
-//("Phil'z"); //$$$$, pour over, dark, hints, advance - 
-//("Blue Bottle Coffee"); //$$$$$, light, pour over, nerd - 30 or higher
+("Dunkin' Donuts"); //$$, new, coffee maker, mix - 6 or less
+("Starbucks"); //$$$, cold brew, nespresso, - 
+("Peet's"); //$$$, cold brew, nespresso, medium, intermediate - 
+("Phil'z"); //$$$$, pour over, dark, hints, advance - 
+("Blue Bottle Coffee"); //$$$$$, light, pour over, nerd - 30 or higher
 
 //Answers of the questions should be tallied to provide a final answer.
 //The final answer will be the name of a coffee shop in which we'll locate the closet

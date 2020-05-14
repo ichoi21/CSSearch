@@ -2,21 +2,23 @@ $(document).ready(function () {
   $("#btnSubmit").on("click", function (e) {
     e.preventDefault();
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
-    var cat = "&q=coffee";
+    var cat = "&q=icecream";
+    var sb = "&q=baskinrobbins";
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
     var cityURL = "https://developers.zomato.com/api/v2.1/cities?";
-    var count = "&count=5";
+    var count = "&count=1";
+    var count2 = "&count=4";
     var textInput = $("#textInput").val();
     var entityId = "";
-    var OpHours = moment().format("MMMM Do YYYY, h:mm:ss a");
-    console.log(OpHours);
+    // var OpHours = moment().format("MMMM Do YYYY, h:mm:ss a");
+    // console.log(OpHours);
 
     $.ajax({
       type: "GET",
       url: cityURL + "q=" + textInput + api_key,
       dataType: "json",
     }).then(function (response) {
-      console.log(response);
+      // console.log(response);
 
       var cityId = response.location_suggestions[0].id;
       var entityId = "entity_id=" + cityId + "&entity_type=city";
@@ -68,6 +70,54 @@ $(document).ready(function () {
 
         $(".card-text").append(
           `<img src=${dresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`
+        );
+
+        $(".card-title").html("<h5>" + name + "</h5>");
+        $("#image").attr("src", img);
+        $("#address").html("<b>Location: </b>" + shopAddress);
+        $("#hood").html("<b>Neighborhood: </b>" + shopLocality);
+        $("#hours").html("<b>Operating Hours: </b>" + shopHours);
+        $("#ratings").html("<b>Ratings: </b>" + uRatings);
+      });
+
+      $.ajax({
+        type: "GET",
+        url: searchURL + entityId + sb + count2 + api_key,
+        dataType: "json",
+      }).then(function (rresponse) {
+        console.log(rresponse);
+
+        var randNum = Math.floor(Math.random() * rresponse.restaurants.length);
+
+        console.log(rresponse.restaurants[randNum].restaurant.url);
+
+        var name = rresponse.restaurants[0].restaurant.name;
+        var img =
+          rresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url;
+        var shopAddress = rresponse.restaurants[0].restaurant.location.address;
+        var shopLocality =
+          rresponse.restaurants[0].restaurant.location.locality;
+        var shopHours = rresponse.restaurants[0].restaurant.timings;
+        var uRatings =
+          rresponse.restaurants[0].restaurant.user_rating.rating_text;
+
+        var randNum = Math.floor(Math.random() * rresponse.restaurants.length);
+
+        console.log(rresponse.restaurants[randNum].restaurant.url);
+
+        var randNum = Math.floor(Math.random() * rresponse.restaurants.length);
+        var name = rresponse.restaurants[0].restaurant.name;
+        var img =
+          rresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url;
+        var shopAddress = rresponse.restaurants[0].restaurant.location.address;
+        var shopLocality =
+          rresponse.restaurants[0].restaurant.location.locality;
+        var shopHours = rresponse.restaurants[0].restaurant.timings;
+        var uRatings =
+          rresponse.restaurants[0].restaurant.user_rating.rating_text;
+
+        $(".card-text").append(
+          `<img src=${rresponse.restaurants[randNum].restaurant.photos[0].photo.thumb_url}>`
         );
 
         $(".card-title").html("<h5>" + name + "</h5>");
