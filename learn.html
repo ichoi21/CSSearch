@@ -40,8 +40,8 @@
       </div>
     </header>
     <main class="container-fluid">
-      <div class="row min-vh-100">
-        <div class="col-md-3 bg-dark" id="navbar">
+      <div class="row">
+        <div class="card col-md-3 bg-dark" id="navbar">
           <div class="row p-2 pt-4 justify-content-center">
             <button
               id="btnBrew"
@@ -70,9 +70,20 @@
               role="button"
               class="btn btn-outline-warning btn-block"
               data-toggle="collapse"
-              data-target="#myth2"
+              data-target="#roast"
             >
-              The Roast
+              Espresso vs Drip
+            </button>
+          </div>
+          <div class="row p-2 pb-4 justify-content-center">
+            <button
+              id="btnCB"
+              role="button"
+              class="btn btn-outline-warning btn-block"
+              data-toggle="collapse"
+              data-target="#cold"
+            >
+              Cold Brew
             </button>
           </div>
         </div>
@@ -83,13 +94,14 @@
                 <div id="brew" class="collapse show width"></div>
                 <div id="myth" class="collapse show width"></div>
                 <div id="roast" class="collapse show width"></div>
+                <div id="cold" class="collapse show width"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="text-center bg-dark sticky-footer small">
+    <footer class="text-center bg-dark fixed-bottom small">
       <div class="container" id="footer">
         <span class="text-muted"
           >With the help of Google, OWM, open source, GitHub, and BCS put
