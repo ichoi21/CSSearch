@@ -72,23 +72,24 @@ $(document).ready(function () {
   question4();
   question5();
   question6();
+  cafeFinder();
   function cafeFinder() {
     $("#button").on("click", function () {
       if (count <= 6) {
         answer = "Dunkin' Donuts";
-        return answer;
+        console.log(answer);
       }
       else if (count > 6 && count <= 12) {
         answer = "Peet's Coffee";
-        return answer;
+        console.log(answer);
       }
       else if (count > 12 && count <= 18) {
         answer = "Starbucks";
-        return answer;
+        console.log(answer);
       }
       else if (count > 18) {
         answer = "Blue Bottle Coffee";
-        return answer;
+        console.log(answer);
       }
     });
   };

@@ -6,6 +6,8 @@ $(document).ready(function () {
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
     var cityURL = "https://developers.zomato.com/api/v2.1/cities?";
     var count = "&count=5";
+    var cafename = cafeFinder();
+    console.log(cafename);
     var textInput = $("#textInput").val();
     var entityId = "";
     $.ajax({
@@ -83,8 +85,7 @@ $(document).ready(function () {
           dresponse.restaurants[2].restaurant.user_rating.rating_text;
         $("#restNameThree").html("<h5>" + nameThree + "</h5>");
         $("#restImgThree").append(
-          `<img src=${imgThree}>`
-        );
+          `<img src=${imgThree}>`);
         $("#imageThree").attr("src", imgThree);
         $("#addressThree").html("<b>Location: </b>" + shopAddressThree);
         $("#hoodThree").html("<b>Neighborhood: </b>" + shopLocalityThree);
