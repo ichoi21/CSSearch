@@ -1,7 +1,6 @@
 $(document).ready(function () {
-  $("#button").on("click", function () {
-    cafeFinder();
-  });
+  var answer = cafeFinder();
+
   $("#btnSubmit").on("click", function (e) {
     e.preventDefault();
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
