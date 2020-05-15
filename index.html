@@ -12,28 +12,20 @@
 
 <body class="container">
   <header>
-    <div class="jumbotron jumbotron.fluid text-center">
-      <h3>Coffee Shop <span class="badge badge-warning">Search!</span></h3>
-      <nav class="navbar navbar-expand-md navbar-dark text-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="jumbotron jumbotron.fluid text-light text-center pb-2 pt-4">
+      <h1>Coffee.Shop <span class="badge badge-warning">Search!</span></h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-md-8"></div>
-        <div class="col-md-4">
-          <div class="collapse navbar-collapse" id="navbars">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Search</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="learn.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="disclaim.html">Disclaimer</a>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Search</a>
+            <a class="nav-item nav-link" href="learn.html">Coffee 101</a>
+            <a class="nav-item nav-link" href="disclaim.html">Disclaimer</a>
           </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -52,26 +44,26 @@
             <div class="card-body">
               <h5 class="card-title">What is your coffee experience level?</h5>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="answer1" value="option1" checked>
+                <input class="form-check-input" type="radio" name="exampleRadios" id="answer1" value="option1">
                 <label class="form-check-label" for="exampleRadios1">
                   I'm pretty new to all of this
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="answer2" value="option2" checked>
-                <label class="form-check-label" for="exampleRadios1">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="answer2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
                   I'm at an intermediate stage
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="answer3" value="option3" checked>
-                <label class="form-check-label" for="exampleRadios1">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="answer3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">
                   I'm pretty advanced
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="answer4" value="option4">
-                <label class="form-check-label" for="exampleRadios1">
+                <label class="form-check-label" for="exampleRadios4">
                   I'm a total coffee nerd
                 </label>
               </div>
@@ -83,13 +75,13 @@
             <div class="card-body">
               <h5 class="card-title">What's your preferred way to making coffee?</h5>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios2" id="answer5" value="option1" checked>
+                <input class="form-check-input" type="radio" name="exampleRadios2" id="answer5" value="option1">
                 <label class="form-check-label" for="exampleRadios2">
                   Coffee Maker
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios2" id="answer6" value="option2" checked>
+                <input class="form-check-input" type="radio" name="exampleRadios2" id="answer6" value="option2">
                 <label class="form-check-label" for="exampleRadios2">
                   French Press/ Pour Over
                 </label>
@@ -114,14 +106,13 @@
             <div class="card-body">
               <h5 class="card-title">Do you add anything to your coffee?</h5>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios3" id="answer9" value="option1" checked>
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="answer9" value="option1">
                 <label class="form-check-label" for="exampleRadios1">
                   Milk and/or Cream
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios3" id="answer10" value="option2"
-                  checked>
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="answer10" value="option2">
                 <label class="form-check-label" for="exampleRadios1">
                   Sugar, Sweetener and/or Syrups
                 </label>
@@ -146,15 +137,13 @@
             <div class="card-body">
               <h5 class="card-title">Do you have a prefered roast level?</h5>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios4" id="answer13" value="option1"
-                  checked>
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="answer13" value="option1">
                 <label class="form-check-label" for="exampleRadios1">
                   Light Roast
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios4" id="answer14" value="option2"
-                  checked>
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="answer14" value="option2">
                 <label class="form-check-label" for="exampleRadios1">
                   Medium Roast
                 </label>
@@ -179,15 +168,13 @@
             <div class="card-body">
               <h5 class="card-title"> How do you like your coffee to taste</h5>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios5" id="answer17" value="option1"
-                  checked>
+                <input class="form-check-input" type="radio" name="exampleRadios5" id="answer17" value="option1">
                 <label class="form-check-label" for="exampleRadios1">
                   Classic and traditional
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios5" id="answer18" value="option2"
-                  checked>
+                <input class="form-check-input" type="radio" name="exampleRadios5" id="answer18" value="option2">
                 <label class="form-check-label" for="exampleRadios1">
                   Hints of something different
                 </label>
@@ -212,15 +199,13 @@
             <div class="card-body">
               <h5 class="card-title">How much do you spend on a cup of coffee regularly?</h5>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios6" id="answer21" value="option1"
-                  checked>
+                <input class="form-check-input" type="radio" name="exampleRadios6" id="answer21" value="option1">
                 <label class="form-check-label" for="exampleRadios1">
                   $$
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios6" id="answer22" value="option2"
-                  checked>
+                <input class="form-check-input" type="radio" name="exampleRadios6" id="answer22" value="option2">
                 <label class="form-check-label" for="exampleRadios1">
                   $$$
                 </label>
@@ -251,13 +236,17 @@
     </div>
   </div>
   </main>
-  <footer class="text-center bg-dark sticky-footer small">
+  <footer class="text-center bg-dark fixed-bottom small">
     <div class="container" id="footer">
-      <span class="text-muted">With the help of Google, OWM, open source, GitHub, and BCS put
-        together by <a link target="_blank" href="">Alavaro </a>,
-        <a link target="_blank" href="">Ian </a>,
-        <a link target="_blank" href="">Joseph </a>,
-        <a link target="_blank" href="">Steven </a>, &copy; 2020</span>
+      <span class="text-muted"
+        >With the help of Google, OWM, open source, GitHub, and BCS put
+        together by - 
+
+        <a link target="_blank" href="https://github.com/alvaro-centeno">Alavaro </a>,
+        <a link target="_blank" href="https://github.com/ichoi21">Ian </a>,
+        <a link target="_blank" href="https://github.com/josephtawil">Joseph </a>,
+        <a link target="_blank" href="https://github.com/stevierichard">Steven </a>, &copy; 2020</span
+      >
     </div>
   </footer>
 
@@ -272,7 +261,7 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/a361b2e3ef.js" crossorigin="anonymous"></script>
-  <!-- <script src="./asset/qna.js"></script> -->
+  <script src="./asset/qna.js"></script>
   <script src="./asset/app.js"></script>
 </body>
 
