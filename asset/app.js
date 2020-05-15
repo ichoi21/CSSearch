@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  $("#button").on("click", function () {
-    cafeFinder();
-  });
+
   $("#btnSubmit").on("click", function (e) {
     e.preventDefault();
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
@@ -9,13 +7,11 @@ $(document).ready(function () {
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
     var cityURL = "https://developers.zomato.com/api/v2.1/cities?";
     var count = "&count=5";
-
-
     var textInput = $("#textInput").val();
     var entityId = "";
     $.ajax({
       type: "GET",
-      url: cityURL + "q=" + textInput + api_key,
+      url: `https://developers.zomato.com/api/v2.1/cities?q=${textInput}&apikey=${api_key}`,
       dataType: "json",
     }).then(function (response) {
       console.log(response);
@@ -24,7 +20,7 @@ $(document).ready(function () {
       // console.log(entityId);
       $.ajax({
         type: "GET",
-        url: `https://developers.zomato.com/api/v2.1/search?entity_id=306&entity_type=city&q=Starbucks&apikey=8db0f9bc1f4b7d7c56298c24299661bf`,
+        url: `https://developers.zomato.com/api/v2.1/search?entity_id=${cityId}&entity_type=city&q=${answer}&apikey=${api_key}`,
         dataType: "json",
       }).then(function (dresponse) {
         console.log(dresponse);
