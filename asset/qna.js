@@ -73,21 +73,21 @@ $(document).ready(function () {
   cafeFinder();
 
   function cafeFinder() {
-    $("#button").on("click", function () {
-      if (count <= 6) {
-        answer = "Dunkin' Donuts";
-        return answer;
-      } else if (count > 6 && count <= 12) {
-        answer = "Peet's Coffee";
-        return answer;
-      } else if (count > 12 && count <= 18) {
-        answer = "Starbucks";
-        return answer;
-      } else if (count > 18) {
-        answer = "Blue Bottle Coffee";
-        return answer;
-      }
-    });
+
+    if (count <= 6) {
+      answer = "Dunkin' Donuts";
+
+    } else if (count > 6 && count <= 12) {
+      answer = "Peet's Coffee";
+
+    } else if (count > 12 && count <= 18) {
+      answer = "Starbucks";
+
+    } else if (count > 18) {
+      answer = "Blue Bottle Coffee";
+
+    }
+
     return answer
   };
   // for (var i = 0; i < question.length; i++) {
