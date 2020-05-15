@@ -1,86 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./asset/styles.css" />
-    <title>Project 1: Coffee Search - Learn</title>
+    <title>Project 1: Coffee Search</title>
   </head>
-
   <body class="container">
     <header>
-      <div class="jumbotron jumbotron.fluid text-light text-center pb-2">
-        <h1><b>Coffee.Shop</b> <span class="badge badge-info">LEARNING HUB</span></h1>
-        <nav class="navbar navbar-expand-md navbar-dark text-light">
+      <div class="jumbotron text-light text-center pb-2 pt-4">
+        <h1>Coffee Shop <span class="badge badge-info">Learning Hub</span></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#"></a>
           <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarsExampleDefault"
-          aria-controls="navbarsExampleDefault"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="col-md-8"></div>
-          <div class="col-md-4">
-            <div class="collapse navbar-collapse" id="navbars">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Search</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="learn.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="disclaim.html">Disclaimer</a>
-                </li>
-              </ul>
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="index.html">Search</a>
+              <a class="nav-item nav-link" href="learn.html">Coffee 101</a>
+              <a class="nav-item nav-link" href="disclaim.html">Disclaimer</a>
+            </div>
           </div>
-          </nav>
-
+        </nav>
       </div>
     </header>
     <main class="container-fluid">
-      <div class="row min-vh-100">
-        <div class="col-md-12 bg-secondary" id="info">
-          <div class="row">SUP</div>
-          <div class="row">SUP 2</div>
+      <div class="row">
+        <div class="card col-md-3 bg-dark" id="navbar">
+          <div class="row p-2 pt-4 justify-content-center">
+            <button
+              id="btnBrew"
+              role="button"
+              class="btn btn-outline-warning btn-block"
+              data-toggle="collapse"
+              data-target="#brew"
+            >
+              How to Brew
+            </button>
+          </div>
+          <div class="row p-2 justify-content-center">
+            <button
+              id="btnMyth"
+              role="button"
+              class="btn btn-outline-warning btn-block"
+              data-toggle="collapse"
+              data-target="#myth"
+            >
+              Light vs Dark
+            </button>
+          </div>
+          <div class="row p-2 justify-content-center">
+            <button
+              id="btnRoast"
+              role="button"
+              class="btn btn-outline-warning btn-block"
+              data-toggle="collapse"
+              data-target="#roast"
+            >
+              Espresso vs Drip
+            </button>
+          </div>
+          <div class="row p-2 pb-4 justify-content-center">
+            <button
+              id="btnCB"
+              role="button"
+              class="btn btn-outline-warning btn-block"
+              data-toggle="collapse"
+              data-target="#cold"
+            >
+              Cold Brew
+            </button>
+          </div>
+        </div>
+        <div class="col-md-9" id="infoResults">
+          <div class="row mt-2 justify-content-center">
+            <div class="card" style="width: 40rem; center;">
+              <div class="card-body">
+                <div id="brew" class="collapse show width"></div>
+                <div id="myth" class="collapse show width"></div>
+                <div id="roast" class="collapse show width"></div>
+                <div id="cold" class="collapse show width"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
-
-    <footer class="text-center bg-dark sticky-footer small">
+    <footer class="text-center bg-dark fixed-bottom small">
       <div class="container" id="footer">
         <span class="text-muted"
           >With the help of Google, OWM, open source, GitHub, and BCS put
-          together byh
+          together by -
 
-          <a link target="_blank" href="">Alavaro </a>,
-          <a link target="_blank" href="">Ian </a>,
-          <a link target="_blank" href="">Joseph </a>,
-          <a link target="_blank" href="">Steven </a>, &copy; 2020</span
+          <a link target="_blank" href="https://github.com/alvaro-centeno"
+            >Alavaro </a
+          >, <a link target="_blank" href="https://github.com/ichoi21">Ian </a>,
+          <a link target="_blank" href="https://github.com/josephtawil"
+            >Joseph </a
+          >,
+          <a link target="_blank" href="https://github.com/stevierichard"
+            >Steven </a
+          >, &copy; 2020</span
         >
       </div>
     </footer>
+
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"
+      integrity="sha256-C66CaAImteEKZPYvgng9j10J/45e9sAuZyfPYCwp4gE="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
     <script
@@ -91,6 +138,10 @@
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a361b2e3ef.js"
       crossorigin="anonymous"
     ></script>
     <script src="./asset/brew.js"></script>
