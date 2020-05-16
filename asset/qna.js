@@ -7,7 +7,7 @@ var count = 0;
 var answer = "";
 // var array = [];
 
-$("#button").on("click", function () {
+$("#btnSubmit").on("click", function () {
   if (count <= 6) {
     answer = "Dunkin' Donuts";
   } else if (count > 6 && count <= 10) {
