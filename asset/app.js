@@ -45,23 +45,24 @@ $(document).ready(function () {
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
         $(
           "#rec"
-        ).append(` <p id="recommend">Based on your answers, we recommend this coffe shop!</p><div class="card" style="width: 18rem; margin-left: 30%;">
-<div class="card-body">
-  <h5 class="card-title pl-3" id="restName">${name}</h5>
-  <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-  <p class="card-text pl-3" id="restImg"><img src=${img}></p>
-  <!-- <a href="#" class="card-link">Card link</a>
-  <a href="#" class="card-link">Another link</a> -->
-  <div class="pb-4" id="storeInfo">
-    <div id="address"><b>Location: </b> ${shopAddress}</div>
-    <div id="hood"><b>Neighborhood: </b> ${shopLocality}</div>
-    <div id="hours"><b>Operating Hours</b>: ${shopHours}</div>
-    <div id="ratings"><b>Ratings: </b> ${uRatings}</div>
-    <!-- <div id="recommendations"></div> -->
-  </div>
-</div>
-</div>
-</div>`);
+        ).append(` <p id="recommend">Based on your answers, we recommend this coffe shop!</p>
+        <div class="card" style="width: 18rem; margin-left: 30%;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restName">${name}</h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImg"><img src=${img}></p>
+            <!-- <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a> -->
+            <div class="pb-4" id="storeInfo">
+              <div id="address"><b>Location: </b> ${shopAddress}</div>
+              <div id="hood"><b>Neighborhood: </b> ${shopLocality}</div>
+              <div id="hours"><b>Operating Hours</b>: ${shopHours}</div>
+              <div id="ratings"><b>Ratings: </b> ${uRatings}</div>
+              <!-- <div id="recommendations"></div> -->
+            </div>
+          </div>
+        </div>
+        `);
 
         $("#addRec").empty();
         var nameTwo = dresponse.restaurants[1].restaurant.name;
@@ -107,10 +108,13 @@ $(document).ready(function () {
         // console.log(dresponse.restaurants[randNum].restaurant.url);
         // var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
 
-        $(
-          "#addRec"
-        ).append(` <p id="suggested" class="mt-3">Check out these other local coffee shops too!</p>
-        <div class=" card mt-2" style="width: 18rem; margin-left: 13%;">
+        $("#addRec").append(` 
+        <div class="row>
+          <div class="col"
+        <h3 id="suggested" class="mt-3">Check out these other local coffee shops too!</h3>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem; margin-left: 13%;">
           <div class="card-body">
             <h5 class="card-title pl-3" id="restName">${nameTwo}</h5>
             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -126,7 +130,7 @@ $(document).ready(function () {
             </div>
           </div>
         </div>
-        <div class="card ml-2 mt-2" style="width: 18rem;">
+        <div class="card m-2" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title pl-3" id="restName">${nameThree}</h5>
             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -142,7 +146,7 @@ $(document).ready(function () {
             </div>
           </div>
         </div>
-      <div class="card mt-2 mb-2" style="width: 18rem; margin-left: 13%;">
+      <div class="card m-2" style="width: 18rem; margin-left: 13%;">
         <div class="card-body">
           <h5 class="card-title pl-3" id="restName">${nameFour}</h5>
           <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -158,7 +162,7 @@ $(document).ready(function () {
           </div>
         </div>
       </div>
-      <div class="card ml-2 mt-2 mb-2" style="width: 18rem;">
+      <div class="card m-2" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title pl-3" id="restName">${nameFive}</h5>
           <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
