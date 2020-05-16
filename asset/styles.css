@@ -10,18 +10,18 @@ body {
   background-color: black;
 }
 
-#recommend {
-  margin-left: 25%;
+#coffeePic {
+  width: 600px;
 }
 
-#suggested {
-  margin-left: 25%;
+/* #coffeequote {
+  height: 550px;
+} */
+
+input {
+  text-align: center;
 }
 
-#recommend {
-  margin-left: 25%;
-}
-
-#suggested {
-  margin-left: 25%;
+.carousel-item {
+  height: 520px;
 }
