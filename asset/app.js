@@ -30,7 +30,7 @@ $(document).ready(function () {
         var randNum = Math.floor(
           Math.random() * dresponse.restaurants[0].restaurant.photos.length
         );
-        console.log(dresponse.restaurants[randNum].restaurant.url);
+        // console.log(dresponse.restaurants[randNum].restaurant.url);
 
         var name = dresponse.restaurants[0].restaurant.name;
         var img =
@@ -41,6 +41,10 @@ $(document).ready(function () {
         var shopHours = dresponse.restaurants[0].restaurant.timings;
         var uRatings =
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
+        // var status;
+        // parseInt(shopHours[0]) ? (status = "open") : (status = "closed");
+        // console.log(shopHours);
+        // console.log(status);
         var weath_api_key = "3dababe5876bb70212d76fb0d2f5aa26";
         $.ajax({
           type: "GET",
