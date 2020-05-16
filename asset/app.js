@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $("#btnSubmit").on("click", function (e) {
     e.preventDefault();
+
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
     var cat = "&q=coffee";
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
@@ -20,7 +21,7 @@ $(document).ready(function () {
       console.log(cityId);
       $.ajax({
         type: "GET",
-        url: `https://developers.zomato.com/api/v2.1/search?entity_id=${cityId}&entity_type=city&q=${answer}&apikey=${api_key}`,
+        url: `https://developers.zomato.com/api/v2.1/search?entity_id=${cityId}&entity_type=city&q=${answer}&${cat}&apikey=${api_key}`,
         dataType: "json",
       }).then(function (dresponse) {
         console.log(dresponse);
