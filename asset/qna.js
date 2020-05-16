@@ -7,14 +7,14 @@ var count = 0;
 var answer = "";
 // var array = [];
 
-$("#button").on("click", function () {
+$("#btnSubmit").on("click", function () {
   if (count <= 6) {
     answer = "Dunkin' Donuts";
-  } else if (count > 6 && count <= 12) {
+  } else if (count > 6 && count <= 10) {
     answer = "Peets";
-  } else if (count > 12 && count <= 18) {
+  } else if (count > 10 && count <= 16) {
     answer = "Starbucks";
-  } else if (count > 18) {
+  } else if (count > 16) {
     answer = "Blue Bottle Coffee";
   }
   console.log(answer);
