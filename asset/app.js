@@ -109,74 +109,72 @@ $(document).ready(function () {
 
         $(
           "#addRec"
-        ).append(` <p id="suggested" class="mt-3">Check out these local coffee shops, too!</p> <div class=" card mt-2" style="width: 18rem; margin-left: 13%;">
-        <div class="card-body">
-          <h5 class="card-title pl-3" id="restName">${nameTwo}</h5>
-          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-          <p class="card-text pl-3" id="restImg"><img src=${imgTwo}></p>
-          <!-- <a href="#" class="card-link">Card link</a>
-<a href="#" class="card-link">Another link</a> -->
-          <div class="pb-4" id="storeInfo">
-            <div id="address"><b>Location: </b> ${shopAddressTwo}</div>
-            <div id="hood"><b>Neighborhood: </b> ${shopLocalityTwo}</div>
-            <div id="hours"><b>Operating Hours</b>: ${shopHoursTwo}</div>
-            <div id="ratings"><b>Ratings: </b> ${uRatingsTwo}</div>
-            <!-- <div id="recommendations"></div> -->
+        ).append(` <p id="suggested" class="mt-3">Check out these other local coffee shops too!</p>
+        <div class=" card mt-2" style="width: 18rem; margin-left: 13%;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restName">${nameTwo}</h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImg"><img src=${imgTwo}></p>
+            <!-- <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a> -->
+            <div class="pb-4" id="storeInfo">
+              <div id="address"><b>Location: </b> ${shopAddressTwo}</div>
+              <div id="hood"><b>Neighborhood: </b> ${shopLocalityTwo}</div>
+              <div id="hours"><b>Operating Hours</b>: ${shopHoursTwo}</div>
+              <div id="ratings"><b>Ratings: </b> ${uRatingsTwo}</div>
+              <!-- <div id="recommendations"></div> -->
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="card ml-2 mt-2" style="width: 18rem;">
+        <div class="card ml-2 mt-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restName">${nameThree}</h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImg"><img src=${imgThree}></p>
+            <!-- <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a> -->
+            <div class="pb-4" id="storeInfo">
+              <div id="address"><b>Location: </b> ${shopAddressThree}</div>
+              <div id="hood"><b>Neighborhood: </b> ${shopLocalityThree}</div>
+              <div id="hours"><b>Operating Hours</b>: ${shopHoursThree}</div>
+              <div id="ratings"><b>Ratings: </b> ${uRatingsThree}</div>
+              <!-- <div id="recommendations"></div> -->
+            </div>
+          </div>
+        </div>
+      <div class="card mt-2 mb-2" style="width: 18rem; margin-left: 13%;">
         <div class="card-body">
-          <h5 class="card-title pl-3" id="restName">${nameThree}</h5>
+          <h5 class="card-title pl-3" id="restName">${nameFour}</h5>
           <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-          <p class="card-text pl-3" id="restImg"><img src=${imgThree}></p>
+          <p class="card-text pl-3" id="restImg"><img src=${imgFour}></p>
           <!-- <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a> -->
           <div class="pb-4" id="storeInfo">
-            <div id="address"><b>Location: </b> ${shopAddressThree}</div>
-            <div id="hood"><b>Neighborhood: </b> ${shopLocalityThree}</div>
-            <div id="hours"><b>Operating Hours</b>: ${shopHoursThree}</div>
-            <div id="ratings"><b>Ratings: </b> ${uRatingsThree}</div>
+            <div id="address"><b>Location: </b> ${shopAddressFour}</div>
+            <div id="hood"><b>Neighborhood: </b> ${shopLocalityFour}</div>
+            <div id="hours"><b>Operating Hours</b>: ${shopHoursFour}</div>
+            <div id="ratings"><b>Ratings: </b> ${uRatingsFour}</div>
             <!-- <div id="recommendations"></div> -->
           </div>
         </div>
       </div>
-    </div>
-      <div class="card mt-2 mb-2" style="width: 18rem; margin-left: 13%;">
-      <div class="card-body">
-      <h5 class="card-title pl-3" id="restName">${nameFour}</h5>
-      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-      <p class="card-text pl-3" id="restImg"><img src=${imgFour}></p>
-      <!-- <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a> -->
-      <div class="pb-4" id="storeInfo">
-        <div id="address"><b>Location: </b> ${shopAddressFour}</div>
-        <div id="hood"><b>Neighborhood: </b> ${shopLocalityFour}</div>
-        <div id="hours"><b>Operating Hours</b>: ${shopHoursFour}</div>
-        <div id="ratings"><b>Ratings: </b> ${uRatingsFour}</div>
-        <!-- <div id="recommendations"></div> -->
-      </div>
-    </div>
-    </div>
-    </div>
       <div class="card ml-2 mt-2 mb-2" style="width: 18rem;">
-      <div class="card-body">
-      <h5 class="card-title pl-3" id="restName">${nameFive}</h5>
-      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-      <p class="card-text pl-3" id="restImg"><img src=${imgFive}></p>
-      <!-- <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a> -->
-      <div class="pb-4" id="storeInfo">
-        <div id="address"><b>Location: </b> ${shopAddressFive}</div>
-        <div id="hood"><b>Neighborhood: </b> ${shopLocalityFive}</div>
-        <div id="hours"><b>Operating Hours</b>: ${shopHoursFive}</div>
-        <div id="ratings"><b>Ratings: </b> ${uRatingsFive}</div>
-        <!-- <div id="recommendations"></div> -->
+        <div class="card-body">
+          <h5 class="card-title pl-3" id="restName">${nameFive}</h5>
+          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+          <p class="card-text pl-3" id="restImg"><img src=${imgFive}></p>
+          <!-- <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a> -->
+          <div class="pb-4" id="storeInfo">
+            <div id="address"><b>Location: </b> ${shopAddressFive}</div>
+            <div id="hood"><b>Neighborhood: </b> ${shopLocalityFive}</div>
+            <div id="hours"><b>Operating Hours</b>: ${shopHoursFive}</div>
+            <div id="ratings"><b>Ratings: </b> ${uRatingsFive}</div>
+            <!-- <div id="recommendations"></div> -->
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    </div>`);
+`);
 
         // $("#restNameTwo").html("<h5>" + nameTwo + "</h5>");
         // $("#restImgTwo").append(
