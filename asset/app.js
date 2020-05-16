@@ -116,8 +116,7 @@ $(document).ready(function () {
           </div>
         </div>
       </div>
-
-      <div class="card ml-2 mt-2" style="width: 18rem;">
+    <div class="card ml-2 mt-2" style="width: 18rem;">
       <div class="card-body">
       <h5 class="card-title pl-3" id="restName">${nameThree}</h5>
       <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -168,48 +167,6 @@ $(document).ready(function () {
     </div>
     </div>
     </div>`)
-
-
-        // $("#restNameTwo").html("<h5>" + nameTwo + "</h5>");
-        // $("#restImgTwo").append(
-        //   `<img src=${imgTwo}>`
-        // );
-        // $("#imageTwo").attr("src", imgTwo);
-        // $("#addressTwo").html("<b>Location: </b>" + shopAddressTwo);
-        // $("#hoodTwo").html("<b>Neighborhood: </b>" + shopLocalityTwo);
-        // $("#hoursTwo").html("<b>Operating Hours: </b>" + shopHoursTwo);
-        // $("#ratingsTwo").html("<b>Ratings: </b>" + uRatingsTwo);
-
-
-        // $("#restNameThree").html("<h5>" + nameThree + "</h5>");
-        // $("#restImgThree").append(
-        //   `<img src=${imgThree}>`
-        // );
-        // $("#imageThree").attr("src", imgThree);
-        // $("#addressThree").html("<b>Location: </b>" + shopAddressThree);
-        // $("#hoodThree").html("<b>Neighborhood: </b>" + shopLocalityThree);
-        // $("#hoursThree").html("<b>Operating Hours: </b>" + shopHoursThree);
-        // $("#ratingsThree").html("<b>Ratings: </b>" + uRatingsThree);
-
-        // $("#restNameFour").html("<h5>" + nameFour + "</h5>");
-        // $("#restImgFour").append(
-        //   `<img src=${imgFour}>`
-        // );
-        // $("#imageFour").attr("src", imgFour);
-        // $("#addressFour").html("<b>Location: </b>" + shopAddressFour);
-        // $("#hoodFour").html("<b>Neighborhood: </b>" + shopLocalityFour);
-        // $("#hoursFour").html("<b>Operating Hours: </b>" + shopHoursFour);
-        // $("#ratingsFour").html("<b>Ratings: </b>" + uRatingsFour);
-
-        // $("#restNameFive").html("<h5>" + nameFive + "</h5>");
-        // $("#restImgFive").append(
-        //   `<img src=${imgFive}>`
-        // );
-        // $("#imageFive").attr("src", imgFive);
-        // $("#addressFive").html("<b>Location: </b>" + shopAddressFive);
-        // $("#hoodFive").html("<b>Neighborhood: </b>" + shopLocalityFive);
-        // $("#hoursFive").html("<b>Operating Hours: </b>" + shopHoursFive);
-        // $("#ratingsFive").html("<b>Ratings: </b>" + uRatingsFive);
       });
     });
   });
