@@ -25,7 +25,9 @@ $(document).ready(function () {
       }).then(function (dresponse) {
         console.log(dresponse);
         $("#rec").empty();
-        var randNum = Math.floor(Math.random() * dresponse.restaurants.length);
+        var randNum = Math.floor(
+          Math.random() * dresponse.restaurants[0].restaurant.photos.length
+        );
         console.log(dresponse.restaurants[randNum].restaurant.url);
         // for (var i = 0; i < response.restaurants.length; i++) {
         //   var still = response.restaurants[i].restaurant.url;
