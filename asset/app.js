@@ -47,8 +47,8 @@ $(document).ready(function () {
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
         $("#rec").append(` 
         <div class="row">
-        <div class="col-md-12">
-                <p id="recommend" class="text-light">Based on your answers, we recommend this coffee shop!</p>
+        <div class="col-xs-12">
+                <h3 id="recommend" class="text-light">Based on your answers, we recommend this coffee shop!</h3>
                 </div>
         </div>
 
