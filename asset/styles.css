@@ -10,6 +10,10 @@ body {
   background-color: black;
 }
 
-#weather {
-  height: 200px;
+#coffeePic {
+  width: 600px;
+}
+
+input {
+  text-align: center;
 }

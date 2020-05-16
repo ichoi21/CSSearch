@@ -9,9 +9,9 @@ var answer = "";
 
 $("#btnSubmit").on("click", function () {
   if (count <= 6) {
-    answer = "Dunkin' Donuts";
+    answer = "McDonalds";
   } else if (count > 6 && count <= 10) {
-    answer = "Peet's";
+    answer = "Philz";
   } else if (count > 10 && count <= 16) {
     answer = "Starbucks";
   } else if (count > 16) {
