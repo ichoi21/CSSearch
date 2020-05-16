@@ -15,14 +15,15 @@ Example:
 https://www.drinktrade.com/
 ```
 
-API:
+APIs/CSS/JS:
 
 - zomato.com
+- openweathermap.com
 - getbootstrap.com
 - momentjs
 - jQuery
 
-Members:
+Group Members:
 
 - Alvaro Centeno
 - Ian Choi
@@ -56,4 +57,18 @@ Members:
 - User Input provide answers from quiz to select coffee brand and city location.
 - Added Modal to disclaimer's page.
 - Added Learning page for more user content.
+- Quiz output merged with AJAX requests
 - Results from inputs into a container with card bodies
+- Weather App Map included
+- UI polished
+
+# References USED:
+
+- getbootstrap
+- w3schools.com
+- stackoverflow
+- Google
+- Thomas S/Clarence C
+- zomato
+- openweathermap
+- github open source

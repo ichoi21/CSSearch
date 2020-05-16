@@ -5,14 +5,15 @@ $(document).ready(function () {
     var api_key = "&apikey=8db0f9bc1f4b7d7c56298c24299661bf";
     var cat = "&q=coffee";
     var searchURL = "https://developers.zomato.com/api/v2.1/search?";
-    var cityURL = "https://developers.zomato.com/api/v2.1/cities?";
+    var cityURL = "https://developers.zomato.com/api/v2.1/cities?q=";
     var count = "&count=5";
     var textInput = $("#textInput").val();
     var entityId = "";
     $.ajax({
       type: "GET",
       url: `https://developers.zomato.com/api/v2.1/cities?q=${textInput}&apikey=${api_key}`,
-      // url: cityURL + `q=` + textInput + api_key,
+      // url: cityURL + textInput + api_key,
+      //trial to separating
       dataType: "json",
     }).then(function (response) {
       console.log(response);
@@ -30,13 +31,7 @@ $(document).ready(function () {
           Math.random() * dresponse.restaurants[0].restaurant.photos.length
         );
         console.log(dresponse.restaurants[randNum].restaurant.url);
-        // for (var i = 0; i <br response.restaurants.length; i++) {
-        //   var still = response.restaurants[i].restaurant.url;
-        //   // var gif = response.restaurants[i].restaurant.original.url;
-        //   $("body").append(
-        //     `<img src=${response.restaurants[randNum].restaurant.photos[0].photo.url}>`
-        //   );
-        // }
+
         var name = dresponse.restaurants[0].restaurant.name;
         var img =
           dresponse.restaurants[0].restaurant.photos[randNum].photo.thumb_url;
@@ -93,7 +88,7 @@ $(document).ready(function () {
      </div>
      </div>
       `);
-
+          //future development - varied locations more than 1.
           // $("#addRec").empty();
           // var nameTwo = dresponse.restaurants[1].restaurant.name;
           // var imgTwo =
