@@ -29,7 +29,7 @@ $(document).ready(function () {
           Math.random() * dresponse.restaurants[0].restaurant.photos.length
         );
         console.log(dresponse.restaurants[randNum].restaurant.url);
-        // for (var i = 0; i < response.restaurants.length; i++) {
+        // for (var i = 0; i <br response.restaurants.length; i++) {
         //   var still = response.restaurants[i].restaurant.url;
         //   // var gif = response.restaurants[i].restaurant.original.url;
         //   $("body").append(
@@ -45,16 +45,19 @@ $(document).ready(function () {
         var shopHours = dresponse.restaurants[0].restaurant.timings;
         var uRatings =
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
-        $(
-          "#rec"
-        ).append(` <p id="recommend">Based on your answers, we recommend this coffe shop!</p>
-        <div class="card" style="width: 18rem; margin-left: 30%;">
+        $("#rec").append(` 
+        <div class="row">
+        <div class="col">
+                <p id="recommend" class="text-light">Based on your answers, we recommend this coffee shop!</p>
+                </div>
+        </div>
+
+        <div class="row">
+        <div class="card" style="width: 20rem;">
           <div class="card-body">
             <h5 class="card-title pl-3" id="restName">${name}</h5>
             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
             <p class="card-text pl-3" id="restImg"><img src=${img}></p>
-            <!-- <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a> -->
             <div class="pb-4" id="storeInfo">
               <div id="address"><b>Location: </b> ${shopAddress}</div>
               <div id="hood"><b>Neighborhood: </b> ${shopLocality}</div>
@@ -63,6 +66,20 @@ $(document).ready(function () {
               <!-- <div id="recommendations"></div> -->
             </div>
           </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title pl-3" id="restName">${name}</h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text pl-3" id="restImg"><img src=${img}></p>
+            <div class="pb-4" id="storeInfo">
+              <div id="address"><b>Location: </b> ${shopAddress}</div>
+              <div id="hood"><b>Neighborhood: </b> ${shopLocality}</div>
+              <div id="hours"><b>Operating Hours</b>: ${shopHours}</div>
+              <div id="ratings"><b>Ratings: </b> ${uRatings}</div>
+            </div>
+          </div>
+        </div>
         </div>
       `);
 
