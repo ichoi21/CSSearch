@@ -11,7 +11,7 @@ $("#btnSubmit").on("click", function () {
   if (count <= 6) {
     answer = "Dunkin' Donuts";
   } else if (count > 6 && count <= 10) {
-    answer = "Peets";
+    answer = "Peet's";
   } else if (count > 10 && count <= 16) {
     answer = "Starbucks";
   } else if (count > 16) {
