@@ -9,3 +9,7 @@ body {
   background-repeat: no-repeat;
   background-color: black;
 }
+
+#weather {
+  height: 200px;
+}

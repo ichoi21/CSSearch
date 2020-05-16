@@ -84,8 +84,8 @@ $(document).ready(function () {
             </div>
           </div>
         </div>
-        <div class="card ml-2" style="width: 20rem;">
-          <div class="card-body" id="weather">
+        <div class="card ml-2" style="width: 20rem;" id="weather">
+          <div class="card-body">
           <h6 class="card-title" id="cityName">${cityName}  (${today})<img src = "http://openweathermap.org/img/wn/${icon}.png"></h6>
           <p class="card-text" id="cityInfo">Temperature: ${kelvin}°F  <br>Humidity: ${humidity}%<br>Wind Speed: ${windSpeed} MPH</p>
             </div>
