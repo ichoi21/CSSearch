@@ -47,29 +47,30 @@ $(document).ready(function () {
           dresponse.restaurants[0].restaurant.user_rating.rating_text;
         $("#rec").append(` 
         <div class="row">
-        <div class="col">
+        <div class="col-md-12">
                 <p id="recommend" class="text-light">Based on your answers, we recommend this coffee shop!</p>
                 </div>
         </div>
 
         <div class="row">
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <h5 class="card-title pl-3" id="restName">${name}</h5>
-            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-            <p class="card-text pl-3" id="restImg"><img src=${img}></p>
-            <div class="pb-4" id="storeInfo">
+          <div class="col-md-6">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+              <h5 class="card-title p-3" id="restName">${name}</h5>
+              <p class="card-text p-3" id="restImg"><img src=${img}></p>
+              <div class="pb-4" id="storeInfo">
               <div id="address"><b>Location: </b> ${shopAddress}</div>
               <div id="hood"><b>Neighborhood: </b> ${shopLocality}</div>
               <div id="hours"><b>Operating Hours</b>: ${shopHours}</div>
               <div id="ratings"><b>Ratings: </b> ${uRatings}</div>
-              <!-- <div id="recommendations"></div> -->
+              </div>
             </div>
           </div>
         </div>
+
         <div class="card" style="width: 20rem;">
           <div class="card-body">
-            <h5 class="card-title pl-3" id="restName">${name}</h5>
+            <h5 class="card-title p-3" id="restName">${name}</h5>
             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
             <p class="card-text pl-3" id="restImg"><img src=${img}></p>
             <div class="pb-4" id="storeInfo">
