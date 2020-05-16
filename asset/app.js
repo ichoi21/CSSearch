@@ -68,7 +68,7 @@ $(document).ready(function () {
         </div>
 
         <div class="row">
-          <div class="col-md-6 m-2 p-2">
+          <div class="col m-2 p-2">
             <div class="card" style="width: 20rem;">
               <div class="card-body">
               <h5 class="card-title p-3" id="restName">${name}</h5>
@@ -82,7 +82,7 @@ $(document).ready(function () {
             </div>
           </div>
         </div>
-        <div class="col-md-6 m-2 p-2">
+        <div class="col m-2 p-2">
         <div class="card" style="width: 20rem;">
         <div class="card-body" id="weather">
         <h6 class="card-title" id="cityName">${cityName}  (${today})<img src = "http://openweathermap.org/img/wn/${icon}.png"></h6>

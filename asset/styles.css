@@ -13,3 +13,7 @@ body {
 #coffeePic {
   width: 600px;
 }
+
+input {
+  text-align: center;
+}
