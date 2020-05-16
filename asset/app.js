@@ -65,10 +65,10 @@ $(document).ready(function () {
           $("#rec").append(` 
         <div class="row">
        <div class="col">
-                <p id="recommend" class="text-light">Based on your answers, we recommend this coffee shop!</p>
+                <h3 id="recommend" class="text-light">Based on your answers, we recommend this coffee shop!</h3>
        </div>
        </div>
-       <div class="row mt-5">
+       <div class="row mt-5 mr-4">
 
         <div class="card" style="width: 20rem;">
           <div class="card-body">
@@ -84,8 +84,8 @@ $(document).ready(function () {
             </div>
           </div>
         </div>
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
+        <div class="card ml-2" style="width: 20rem;">
+          <div class="card-body" id="weather">
           <h6 class="card-title" id="cityName">${cityName}  (${today})<img src = "http://openweathermap.org/img/wn/${icon}.png"></h6>
           <p class="card-text" id="cityInfo">Temperature: ${kelvin}°F  <br>Humidity: ${humidity}%<br>Wind Speed: ${windSpeed} MPH</p>
             </div>
