@@ -62,7 +62,7 @@ $(document).ready(function () {
             </div>
           </div>
         </div>
-        `);
+      `);
 
         $("#addRec").empty();
         var nameTwo = dresponse.restaurants[1].restaurant.name;
@@ -111,7 +111,7 @@ $(document).ready(function () {
         $("#addRec").append(` 
         <div class="row>
           <div class="col"
-        <h3 id="suggested" class="mt-3">Check out these other local coffee shops too!</h3>
+          <h3 id="suggested" class="mt-3">Check out these other local coffee shops too!</h3>
           </div>
         </div>
         <div class="card m-2" style="width: 18rem; margin-left: 13%;">
@@ -179,46 +179,6 @@ $(document).ready(function () {
         </div>
       </div>
 `);
-
-        // $("#restNameTwo").html("<h5>" + nameTwo + "</h5>");
-        // $("#restImgTwo").append(
-        //   `<img src=${imgTwo}>`
-        // );
-        // $("#imageTwo").attr("src", imgTwo);
-        // $("#addressTwo").html("<b>Location: </b>" + shopAddressTwo);
-        // $("#hoodTwo").html("<b>Neighborhood: </b>" + shopLocalityTwo);
-        // $("#hoursTwo").html("<b>Operating Hours: </b>" + shopHoursTwo);
-        // $("#ratingsTwo").html("<b>Ratings: </b>" + uRatingsTwo);
-
-        // $("#restNameThree").html("<h5>" + nameThree + "</h5>");
-        // $("#restImgThree").append(
-        //   `<img src=${imgThree}>`
-        // );
-        // $("#imageThree").attr("src", imgThree);
-        // $("#addressThree").html("<b>Location: </b>" + shopAddressThree);
-        // $("#hoodThree").html("<b>Neighborhood: </b>" + shopLocalityThree);
-        // $("#hoursThree").html("<b>Operating Hours: </b>" + shopHoursThree);
-        // $("#ratingsThree").html("<b>Ratings: </b>" + uRatingsThree);
-
-        // $("#restNameFour").html("<h5>" + nameFour + "</h5>");
-        // $("#restImgFour").append(
-        //   `<img src=${imgFour}>`
-        // );
-        // $("#imageFour").attr("src", imgFour);
-        // $("#addressFour").html("<b>Location: </b>" + shopAddressFour);
-        // $("#hoodFour").html("<b>Neighborhood: </b>" + shopLocalityFour);
-        // $("#hoursFour").html("<b>Operating Hours: </b>" + shopHoursFour);
-        // $("#ratingsFour").html("<b>Ratings: </b>" + uRatingsFour);
-
-        // $("#restNameFive").html("<h5>" + nameFive + "</h5>");
-        // $("#restImgFive").append(
-        //   `<img src=${imgFive}>`
-        // );
-        // $("#imageFive").attr("src", imgFive);
-        // $("#addressFive").html("<b>Location: </b>" + shopAddressFive);
-        // $("#hoodFive").html("<b>Neighborhood: </b>" + shopLocalityFive);
-        // $("#hoursFive").html("<b>Operating Hours: </b>" + shopHoursFive);
-        // $("#ratingsFive").html("<b>Ratings: </b>" + uRatingsFive);
       });
     });
   });
